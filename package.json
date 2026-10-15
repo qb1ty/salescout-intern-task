@@ -1,14 +1,22 @@
 {
-  "name": "salescout-intern-task",
-  "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "engines": { "node": ">=20" },
-  "scripts": {
-    "typecheck": "tsc --noEmit",
-    "test": "echo \"Добавьте свои тесты\" && exit 1"
-  },
-  "devDependencies": {
-    "typescript": "^5.6.0"
-  }
+	"name": "salescout-intern-task",
+	"version": "0.1.0",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run",
+		"format": "prettier --write \"src/**/*.ts\""
+	},
+	"devDependencies": {
+		"@types/node": "^26.6.5",
+		"typescript": "^5.6.0",
+		"vitest": "^5.0.5"
+	},
+	"dependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^6.0.2"
+	}
 }
